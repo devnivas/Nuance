@@ -260,7 +260,7 @@ MIT License — feel free to use, modify, and distribute.
 
 ## Author
 
-**Srinivas** — built as part of an internship project exploring full-stack development and NLP.
+**Shrinivas** — built as part of an internship project exploring full-stack development and NLP.
 
 - GitHub: [@devnivas](https://github.com/devnivas)
 
