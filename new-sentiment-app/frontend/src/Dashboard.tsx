@@ -67,13 +67,14 @@ export default function Dashboard() {
   const [result, setResult]   = useState<Result | null>(null);
   const [error, setError]     = useState<string | null>(null);
 
+  const API_URL = (import.meta as any).env.VITE_API_URL ?? "";
   async function handleAnalyze() {
     if (!url.trim()) return;
     setLoading(true);
     setError(null);
     setResult(null);
     try {
-      const res = await fetch("/analyze", {
+      const res = await fetch(`${API_URL}/analyze`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
